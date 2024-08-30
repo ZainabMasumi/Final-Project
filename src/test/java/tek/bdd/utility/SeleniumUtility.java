@@ -16,7 +16,7 @@ public class SeleniumUtility extends BaseSetUp {
         getWait().until(ExpectedConditions.elementToBeClickable(locator))
                 .click();
     }
-    Public void sentText(By locator, String value) {
+    public void sentText(By locator, String value) {
         getWait().until(ExpectedConditions.elementToBeClickable(locator))
                 .sendKeys(value);
     }
