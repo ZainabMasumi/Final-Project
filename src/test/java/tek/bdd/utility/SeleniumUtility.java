@@ -1,7 +1,6 @@
 package tek.bdd.utility;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -25,5 +24,8 @@ public class SeleniumUtility extends BaseSetUp {
     }
     public String getElementText(By locator) {
         return waitForVisibility(locator).getText();
+    }
+    public boolean isElementEnabled(By locator) {
+        return waitForVisibility(locator).isEnabled();
     }
 }
